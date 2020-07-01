@@ -12,12 +12,16 @@
 // import actionType constants
 import * as types from '../constants/actionTypes';
 
-export const setUser = (user) => ({
-  type: types.SET_USER,
-  payload: user,
+export const setUsername = (username) => ({
+  type: types.SET_USERNAME,
+  payload: username,
 });
 
 export const clearUser = () => ({
-  type: types.SET_USER,
-  // payload: user,
+  type: types.CLEAR_USER,
+});
+
+export const setUserPrefs = (userPrefs) => ({
+  type: types.SET_USERPREFS,
+  payload: userPrefs,
 });
